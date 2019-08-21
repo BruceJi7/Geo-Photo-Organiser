@@ -7,9 +7,9 @@ Currently exists as three separate files.
 
 RAW_JPG_PNG_Sorter: Takes a folder as an argument, finds all file types, and places them into folders based on that type.
 
-ExifSorter: Sorts all images in a folder based on type, and then sorts images based on EXIF data, namely, what device it was taken with.
+Exif_Sorter: Sorts all images in a folder based on type, and then sorts images based on EXIF data, namely, what device it was taken with.
 
-Geo_Sorter: Sorts all images in a folder, first checking for the existence of location EXIF data, and then, creates folders based on key address data and moves photos there.
+GeoSorter: Sorts all images in a folder, first checking for the existence of location EXIF data, and then, creates folders based on key address data and moves photos there.
 
 
 TODO:
