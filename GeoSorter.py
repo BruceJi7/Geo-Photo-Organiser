@@ -2,12 +2,18 @@ from pygeocoder import Geocoder
 from exif import Image
 import os, pprint, shelve, shutil
 
+with open(r'C:\Users\User\.spyder-py3\FileTypeOrganiser\GEOAPIKEY.txt', 'r') as apiKeyFile:
+    apiKeyText = apiKeyFile.read()
 
-GMapsAPIKey = 'AIzaSyBXHyXkaYJfV_b3lWfViibeQxC_85fL0Qo'
-GEOAPI = Geocoder(api_key=GMapsAPIKey)
 
 workingDir = r'C:\Users\User\Pictures\iPhone pics\Phone Pics\JPG Files\Taken By iPhone 7'
 os.chdir(workingDir)
+
+
+
+GMapsAPIKey = apiKeyText
+GEOAPI = Geocoder(api_key=GMapsAPIKey)
+
 
 # Function to change from D-M-S system to Decimal Co-ords
 def DMStoDecimal(DMSTuple):
